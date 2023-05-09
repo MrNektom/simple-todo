@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "strict": true
+  },
+  "include": ["vite.config.ts", "src/entry-server.tsx", "src/vite-env.d.ts"]
+}

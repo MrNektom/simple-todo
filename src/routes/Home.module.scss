@@ -1,0 +1,97 @@
+.home {
+  position: relative;
+  padding: 16px;
+  height: 100vh;
+
+  
+}
+
+.task-creator {
+  border: 0;
+  border-radius: 8px;
+  background-color: #333;
+  padding: 8px 12px;
+  transition: background-color 0.15s;
+
+  .task-creator__input {
+    height: 24px;
+    border: 0;
+    background-color: transparent;
+  }
+  
+  .task-creator__input:focus {
+    outline: 0;
+  }
+}
+
+.task-creator:hover {
+  background-color: #444;
+}
+
+.task-creator:active {
+  background-color: #555;
+}
+
+.todo-view {
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background-color 0.15s;
+  user-select: none;
+}
+
+.todo-view:hover {
+  background-color: #ffffff11;
+
+}
+.todo-view:active {
+  background-color: #ffffff22;
+}
+
+.todo-view__edit-menu__form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+.select-button {
+  background-color: transparent;
+  border: 1px solid grey;
+  padding: 4px 8px;
+}
+
+.select-button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.select-button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.select-button.selected {
+  background-color: #464646;
+}
+
+@media(min-width: 1200px) {
+  .home {
+    max-width: 1200px;
+    width: 100vw;
+    place-self: center;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .task-creator {
+    background-color: #ddd;
+  }
+  .task-creator:hover {
+    background-color: #ccc;
+  }
+  .task-creator:active {
+    background-color: #bebebe;
+  }
+  .todo-view:hover {
+    background-color: #e6e6e6;
+  }
+  .todo-view:active {
+    background-color: #cacaca;
+  }
+}
